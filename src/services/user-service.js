@@ -17,7 +17,7 @@ const userService = {
         'Content-type': 'application/json'
       },
       credentials: 'include'
-    }).then(res => res.status === 200 ? res.json() : res.text());
+    }).then(res => res.text().then(text => res.status === 200 ? text : Promise.reject(text)));
   },
 
   logout: function () {

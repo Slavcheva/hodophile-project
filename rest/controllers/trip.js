@@ -16,10 +16,10 @@ module.exports = {
   },
 
   post: (req, res, next) => {
-    const { description } = req.body;
+    const { description, destination, imageUrl } = req.body;
     const { _id } = req.user;
 
-    models.Trip.create({ description, author: _id })
+    models.Trip.create({ description, destination, imageUrl, author: _id })
       .then((createdTrip) => {
         return Promise.all([
           models.User.updateOne({ _id }, { $push: { posts: createdTrip } }),
@@ -34,8 +34,8 @@ module.exports = {
 
   put: (req, res, next) => {
     const id = req.params.id;
-    const { description } = req.body;
-    models.Trip.updateOne({ _id: id }, { description })
+    const {description, destination, imageUrl } = req.body;
+    models.Trip.updateOne({ _id: id }, {description, destination, imageUrl })
       .then((updatedTrip) => res.send(updatedTrip))
       .catch(next)
   },

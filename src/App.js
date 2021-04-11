@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Switch, Redirect} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import userService from "./services/user-service";
 
@@ -49,7 +49,7 @@ class App extends React.Component {
     }
 
     login = (history, data) => {
-        userService.login(data).then(() => {
+        return userService.login(data).then(() => {
             this.setState({isLogged: true});
             history.push('/');
         });
@@ -64,11 +64,11 @@ class App extends React.Component {
                 <div className="Container">
                     <Switch>
                         <Route path='/' exact component={Home}/>
-                        <Route path='/create-trip' render={render(CreateTrip, {isLogged})}/>
                         <Route path="/register" render={render( Register, {isLogged})}/>
                         <Route path="/login" render={render( Login, {isLogged, login: this.login})}/>
                         <Route path="/logout" render={render( Logout, {isLogged, logout: this.logout})}/>
-                        <Route path='/profile' render={render(Profile, {isLogged})}/>
+                        {isLogged && <Route path='/create-trip' render={render(CreateTrip, {isLogged})}/>}
+                        {isLogged && <Route path='/profile' component={Profile}/>}
                         <Route path='/destinations' component={Destinations}/>
                         <Route path='/trips' component={Posts}/>
                         <Route component={NotFound}/>
