@@ -8,8 +8,6 @@ const userService = {
       }
     }).then(res => res.json());
   },
-  // "https://baas.kinvey.com/user/kid_ryEQ1vw4u/register"
-  // "https://baas.kinvey.com/user/kid_ryEQ1vw4u/login"
 
   login: function (data) {
     return fetch(`http://localhost:9000/api/user/login`, {

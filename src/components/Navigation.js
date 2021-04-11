@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 
 
-function Navigation() {
+function Navigation({isLogged}) {
     return <div>
 
         <nav className="nav">
@@ -15,9 +15,11 @@ function Navigation() {
                 </div>
                 <div className="main_list">
                     <ul className="nav-links">
-                        <Link to="/login" className="header-nav-link">Sign in</Link>
-                        <Link to="/register" className="header-nav-link">Sign up</Link>
-                        <Link to="/profile" className="header-nav-link">Profile</Link>
+                        {!isLogged && <Link to="/login" className="header-nav-link">Sign in</Link>}
+                        {!isLogged && <Link to="/register" className="header-nav-link">Sign up</Link>}
+                        {isLogged && <Link to="/profile" className="header-nav-link">Profile</Link>}
+                        {isLogged && <Link to="/logout" className="header-nav-link">Sign out</Link>}
+
                     </ul>
                 </div>
                 <br/>
@@ -25,7 +27,7 @@ function Navigation() {
                     <ul className="nav-links">
                         <Link to="/trips" className="nav-link">Пътеписи</Link>
                         <Link to="/destinations" className="nav-link">Дестинации</Link>
-                        <Link to="/create-trip" className="nav-link">Създайте пътепис</Link>
+                        {isLogged && <Link to="/create-trip" className="nav-link">Създайте пътепис</Link>}
                     </ul>
                 </div>
             </div>
