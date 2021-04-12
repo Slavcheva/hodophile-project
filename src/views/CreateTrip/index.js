@@ -1,5 +1,6 @@
 import React from 'react'
-import postService from '../services/post-service'
+import postService from '../../services/post-service'
+import './style.css'
 
 
 // const CreatePost = ({history}) => {
@@ -36,7 +37,7 @@ const CreateTrip = ({history}) => {
             });
         }, [textareaRef, inputRef, inputImageRef, history]);
 
-    return <div className="CreatePost">
+    return <div className="form-wrapper">
         <form>
             <div className="form-group">
                 <h5>Дестинация</h5>
@@ -47,10 +48,12 @@ const CreateTrip = ({history}) => {
                 <textarea ref={textareaRef}/>
             </div>
             <div className="form-group">
-                <h5>Сложете линк към снимка...</h5>
-                <input type="text" ref={inputImageRef}/>
+                <h5>Сложете снимка...</h5>
+                <input type="file-upload" ref={inputImageRef}/>
             </div>
-            <button type="button" onClick={createPost}>Create Post</button>
+            <div className="form-group">
+                <button type="button" onClick={createPost}>Create Post</button>
+            </div>
         </form>
     </div>;
 }

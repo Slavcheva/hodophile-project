@@ -22,10 +22,10 @@ body {
     /*'Montserrat', sans-serif;*/
 }
 
-a {
-    font-size: 30px;
-    font-weight: bold;
-}
+/*a {*/
+/*    font-size: 30px;*/
+/*    font-weight: bold;*/
+/*}*/
 
 img {
     max-width: 200px;
@@ -33,189 +33,12 @@ img {
     margin: 0 auto;
 }
 
-nav.navbar-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #A678CF;
-}
-
-nav.navbar-menu a {
-    /*display: flex;*/
-    border-radius: 0.5em;
-    justify-content: space-evenly;
-    text-decoration: none;
-    color: white;
-    width: 15%;
-    align-items: center;
-    padding: 10px 10px;
-    border: 1px solid #A678CF;
-}
-
-nav.navbar-menu a:hover {
-    color: #A678CF;
-    background-color: white;
-}
-
-div.welcome-wrapper {
-    width: 70%;
-    margin: 0 auto;
-    padding: 3em 0;
-    text-align: center;
 
 
-}
 
-div.welcome-wrapper p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
-}
-
-div.welcome {
-    padding: 10px;
-    box-shadow: 0 5px 10px 5px #cecece;
-}
-
-div.welcome a {
-    padding: 10px;
-    background-color: #A678CF;
-    border-radius: 0.5em;
-    outline: none;
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    border: 2px solid #A678CF;
-
-}
-
-div.welcome a:hover {
-    background-color: white;
-    color: #A678CF;
-    border: 2px solid #A678CF;
-}
-
-div.welcome p {
-    font-size: 18px;
-    margin: 25px
-}
-
-.form-wrapper {
-    padding: 1em 0 3em 0;
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.form-wrapper form {
-    width: 40%;
-    margin: 0 auto;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
-
-.form-group label {
-    padding-right: 1em;
-    text-align: left;
-}
-
-.form-wrapper button, input {
-    padding: 10px 5px;
-    outline: none;
-    border-radius: 0.5em;
-    border: 1px solid #A678CF;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/* Style the search field */
-form.search-input input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-}
-
-/* Style the submit button */
-form .search-input button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-}
-
-form.search-input button:hover {
-    background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/*.search-input input{*/
-/*    padding: 6px;*/
+/*th {*/
+/*    width: 100% !important;*/
 /*}*/
-/*.search-input  button{*/
-/*    !*padding: 6px;*!*/
-/*    padding: 10px 5px;*/
-/*    outline: none;*/
-/*    border-radius: 0.5em;*/
-/*    border: 1px solid #A678CF;*/
-/*    font: 20px/1.5 'Tangerine', cursive;*/
-/*}*/
-
-.form-wrapper button {
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: #A678CF;
-    color: white;
-    border: none;
-    /*font-size: 18px;*/
-    font-weight: bold;
-    font: 20px/1.5 'Tangerine', cursive;
-    /*border: 2px solid #A678CF;*/
-}
-
-.form-wrapper button:hover {
-    background-color: white;
-    color: #A678CF;
-    border: 2px solid #A678CF;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    background-color: #A678CF;
-    padding: 10px 0;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-th {
-    width: 100% !important;
-}
 
 
 @media screen and (max-width: 800px) {

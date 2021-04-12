@@ -1,0 +1,44 @@
+/*main{*/
+/*    background: lightcyan;*/
+/*}*/
+div.welcome-wrapper {
+    width: 40%;
+    margin: 0 auto;
+    padding: 3em 0;
+    text-align: center;
+    border-radius: 1em;
+}
+
+div.welcome-wrapper p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.welcome {
+    padding: 10px;
+    box-shadow: 0 5px 10px 5px #cecece;
+}
+
+.welcome a {
+    padding: 10px;
+    background-color: #A678CF;
+    border-radius: 0.5em;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    border: 2px solid #A678CF;
+}
+
+div.welcome a:hover {
+    background-color: white;
+    color: #A678CF;
+    border: 2px solid #A678CF;
+}
+
+div.welcome p {
+    font-size: 30px;
+    margin: 15px
+}
+

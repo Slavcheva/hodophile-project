@@ -6,6 +6,7 @@ import userService from "./services/user-service";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Logout from "./components/Logout";
+import Auth from "./components/Auth";
 
 import Login from "./views/Login";
 import Register from "./views/Register";
@@ -61,9 +62,9 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Navigation isLogged={isLogged}/>
-                <div className="Container">
+                    {/*<Auth>*/}
                     <Switch>
-                        <Route path='/' exact component={Home}/>
+                        <Route path='/' exact render={render(Home, {isLogged})}/>
                         <Route path="/register" render={render( Register, {isLogged})}/>
                         <Route path="/login" render={render( Login, {isLogged, login: this.login})}/>
                         <Route path="/logout" render={render( Logout, {isLogged, logout: this.logout})}/>
@@ -73,7 +74,7 @@ class App extends React.Component {
                         <Route path='/trips' component={Posts}/>
                         <Route component={NotFound}/>
                     </Switch>
-                </div>
+                    {/*</Auth>*/}
                 <Footer/>
             </div>
         );
