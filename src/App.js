@@ -16,6 +16,7 @@ import Destinations from "./views/Destinations";
 import Posts from "./views/Trips";
 import Profile from "./views/Profile";
 import NotFound from "./views/NotFound";
+import Post from './views/Trip'
 
 function parseCookies() {
     return document.cookie.split('; ').reduce((acc, cookie) => {
@@ -72,6 +73,7 @@ class App extends React.Component {
                         {isLogged && <Route path='/profile' component={Profile}/>}
                         <Route path='/destinations' component={Destinations}/>
                         <Route path='/trips' component={Posts}/>
+                        <Route path="/trips/:id" component={Post}/>
                         <Route component={NotFound}/>
                     </Switch>
                     {/*</Auth>*/}

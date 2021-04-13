@@ -84,7 +84,7 @@ const initialFormState = {
     repeatPassword: ''
 }
 const schema = yup.object({
-    email: yup.string('Email should be a valid email')
+    email: yup.string().email('Email should be a valid email')
         .required('Email is required'),
 
     username: yup.string('Username should be a string')
