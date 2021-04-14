@@ -11,15 +11,6 @@ export default function withForm(Comp, initialState, schema) {
                 this.setState(({form}) => {
                     return {form: {...form, [name]: e.target.value}};
                 });
-                // this.runControlValidation(name)
-                //     .then(() => {
-                //         this.setState(({errors: {[name]: current, ...others} = {}}) =>
-                //             ({errors: Object.keys(others).length === 0 ? undefined : others})
-                //         );
-                //     })
-                //     .catch(err => {
-                //         this.setState(({errors}) => ({errors: {...errors, [name]: err.errors}}));
-                //     });
             }
         };
 
@@ -29,11 +20,6 @@ export default function withForm(Comp, initialState, schema) {
         getFormErrorState = () => {
             return this.state.errors;
         };
-        // runControlValidation = name => {
-        //     const currentValue = this.state.form[name];
-        //     // eslint-disable-next-line no-mixed-operators
-        //     return schema && schema.fields[name].validate(currentValue, {abortEarly: false}) || Promise.resolve();
-        // };
 
         runValidations = () => {
             return schema.validate(this.state.form, {abortEarly: false})

@@ -11,7 +11,6 @@ const CreateTrip = ({history}) => {
             uploadPreset: 'ml_default'
         }, (error, result) => {
             if (!error && result && result.event === "success") {
-                // console.log('Done! Here is the image info: ', result.info);
                 inputImageRef.current = result.info.url
             }
         }
@@ -27,9 +26,8 @@ const CreateTrip = ({history}) => {
             const destination = inputRef.current.value;
             const description = textareaRef.current.value;
             const imageUrl = inputImageRef.current;
-            console.log(imageUrl)
 
-            if (destination === '' && description === '' && imageUrl === '') {
+            if (destination === '' || description === '' || imageUrl === '') {
                 setError('All fields are mandatory!');
             } else {
                 setError(null)
@@ -52,13 +50,9 @@ const CreateTrip = ({history}) => {
                     <h3>Write here your trip note...</h3>
                     <textarea ref={textareaRef}/>
                 </div>
-                {/*<div className="form-group">*/}
-                {/*    <h3>Image</h3>*/}
-                {/*    <input ref={inputImageRef}/>*/}
-                {/*</div>*/}
+
                 <div className="form-group">
                     <h3>Upload photo...</h3>
-                    {/*<input type="file" ref={inputImageRef} onChange={() => myWidget.open()}/>*/}
                     <button type="button" id="upload_widget" onClick={() => myWidget.open()}
                             className="cloudinary-button">Upload files
                     </button>

@@ -5,7 +5,7 @@ module.exports = {
     // const id = req.params.id;
     // const limit = +req.query.limit;
     // if (limit) {
-    //   models.Trip.find().populate('postId').sort({ _id: -1 }).limit(limit)
+    //   models.TripCard.find().populate('postId').sort({ _id: -1 }).limit(limit)
     //     .then((trips) => res.send(trips))
     //     .catch(next);
     //   return;

@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 import postService from "../../services/post-service";
 import Destination from "../Destination";
-import Post from "../Trip";
+import Post from "../TripCard";
 
 
 const Destinations = () => {
@@ -18,7 +18,7 @@ const Destinations = () => {
         {posts ?
             <div>
                 {posts.map((post) =>
-                    <Destination key={post._id} imageUrl={post.imageUrl} imageAlt="alt" postId={post.postId}
+                    <Destination key={post._id} imageUrl={post.imageUrl} imageAlt="alt" id={post.id}
                           destination={post.destination}/>)}
             </div> : <div>Loading...</div>
         }

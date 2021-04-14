@@ -8,9 +8,9 @@ class Login extends React.Component {
     passwordChangeHandler = this.props.controlChangeHandlerFactory('password');
 
     submitHandler = () => {
-        //
-        // const errors = this.props.getFormErrorState();
-        // if (!!errors) {return;}
+
+        const errors = this.props.getFormErrorState();
+        if (!!errors) {return;}
 
         const data = this.props.getFormState();
         this.props.login(this.props.history, data)
@@ -33,8 +33,7 @@ class Login extends React.Component {
                     <label>Password</label>
                     <input type="password" onChange={this.passwordChangeHandler}/>
                 </div>
-                {error}
-
+                {error && <div className="error">{error}</div>}
                 <div className="form-submit">
                     <button type="button" onClick={this.submitHandler}>Sign in</button>
                 </div>
@@ -47,14 +46,5 @@ const initialFormState = {
     username: '',
     password: '',
 }
-// const schema = yup.object({
-//     username: yup.string('Username should be a string')
-//         .required('Username is required')
-//         .min(2, 'Username should be more than 2 chars'),
-//
-//     password: yup.string('Password must be a string')
-//         .required('Password is required')
-//         .min(3, 'Password must be more than 3 chars'),
-// });
 
 export default withForm(Login, initialFormState);

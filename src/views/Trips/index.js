@@ -1,10 +1,11 @@
 import React from 'react'
 import './style.css'
-import Post from "../../views/Trip";
+import TripCard from "../../views/TripCard";
 import postService from "../../services/post-service";
+import userService from "../../services/user-service";
 
 
-const Posts = () => {
+const Trips = () => {
     const [posts, setPosts] = React.useState(null);
 
     React.useEffect(() => {
@@ -13,15 +14,20 @@ const Posts = () => {
         });
     }, []);
 
+
     return <div>
+
         {posts ?
-                <div>
-                    {posts.map((post) =>
-                        <Post key={post._id} imageUrl={post.imageUrl} imageAlt="alt" postId={post.postId}
-                              author={post.author} destination={post.destination}>{post.description}</Post>)}
-                </div> : <div>Loading...</div>
-            }
+            <div>
+                {posts.map((post) =>
+                    // <TripCard key={post._id} imageUrl={post.imageUrl} imageAlt="alt" id={post._id} author={post.author} destination={post.destination}>
+                    <TripCard key={post._id} {...post}>
+                        {post.description}
+                    </TripCard>)}
+            </div> : <div>Loading...</div>
+        }
+
     </div>;
 };
 
-export default Posts
+export default Trips

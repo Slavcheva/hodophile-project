@@ -7,12 +7,14 @@ div.welcome-wrapper {
     padding: 3em 0;
     text-align: center;
     border-radius: 1em;
+
 }
 
 div.welcome-wrapper p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font: 30px/1.5 'Cormorant', serif;;
 }
 
 div.welcome {
@@ -22,23 +24,25 @@ div.welcome {
 
 .welcome a {
     padding: 10px;
-    background-color: #A678CF;
+    background-color: #D7A070;
     border-radius: 0.5em;
     outline: none;
     text-decoration: none;
     color: black;
     margin: 10px;
-    border: 2px solid #A678CF;
+    border: 2px solid #D7A070;
+    font: 35px/1.5 'Tangerine', cursive;
+
 }
 
 div.welcome a:hover {
     background-color: white;
-    color: #A678CF;
-    border: 2px solid #A678CF;
+    color: #D7A070;
+    border: 2px solid #D7A070;
 }
 
 div.welcome p {
     font-size: 30px;
-    margin: 15px
+    margin: 15px;
 }
 

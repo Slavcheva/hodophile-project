@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&display=swap');
 
-div .post-wrapper {
+div .tripCard-wrapper {
     width: 40%;
     margin: 0 auto;
     padding: 3em 0;
@@ -8,7 +7,7 @@ div .post-wrapper {
     border-radius: 1em;
 }
 
-div .post-wrapper p {
+div .tripCard-wrapper p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,7 +18,7 @@ div .welcome {
     box-shadow: 0 5px 10px 5px #cecece;
 }
 
-.post{
+.tripCard{
     padding: 10px;
     box-shadow: 0 5px 10px 5px #cecece;
     font: 30px/1.5 'Cormorant', cursive;

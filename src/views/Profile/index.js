@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 
 const Profile = () => {
+
     return <div>
         <p>
             <span>Username:</span>

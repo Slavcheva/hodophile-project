@@ -25,8 +25,10 @@ const userService = {
       method: 'POST',
       credentials: 'include'
     }).then(res => res.text());
-  }
-
+  },
+  // load: function (id) {
+  //   return fetch(`http://localhost:9000/api/user${id ? `/${id}` : ''}`).then(res => res.json());
+  // },
 };
 
 export default userService;

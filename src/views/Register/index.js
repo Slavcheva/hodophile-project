@@ -15,15 +15,14 @@ class Register extends React.Component {
 
     submitHandler = () => {
         this.props.runValidations()
-        //   .then(formData => console.log(formData));
-        // const errors = this.props.getFormErrorState();
-        // if (!!errors) {
-        //     return;
-        // }
+
+        const errors = this.props.getFormErrorState();
+        if (!!errors) {
+            return;
+        }
         const data = this.props.getFormState();
         userService.register(data).then(() => {
             this.props.history.push('/login');
-            // alert('success')
         });
     };
     getFirstControlError = name => {

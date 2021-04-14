@@ -8,7 +8,7 @@ nav.navbar-menu {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #A678CF;
+    background-color: #D7A070;
 }
 .nav-links, h2{
     margin: 5px;
@@ -22,12 +22,12 @@ nav.navbar-menu {
     width: 15%;
     align-items: center;
     padding: 10px 10px;
-    border: 1px solid #A678CF;
+    border: 1px solid #D7A070;
     font-size: 35px;
 
 }
 
 .nav-links a:hover {
-    color: #A678CF;
+    color: #D7A070;
     background-color: white;
 }

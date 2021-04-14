@@ -2,7 +2,7 @@ const User = require('./User');
 const Trip = require('./Trip');
 const TokenBlacklist = require('./TokenBlacklist');
 
-// Trip.create([
+// TripCard.create([
 //     {
 //         destination: 'Великденски острови',
 //         imageUrl: 'https://ikarpress.com/wp-content/uploads/2016/04/velikdenski_ostrovi6.jpg',
