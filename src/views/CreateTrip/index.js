@@ -59,8 +59,8 @@ const CreateTrip = ({history}) => {
 
                 </div>
                 <div className="form-group">
-                    <button type="button" onClick={createPost}>Create Post</button>
                     {error ? (<div className='error'>{error}</div>) : null}
+                    <button type="button" onClick={createPost}>Create Post</button>
                 </div>
             </form>
         </div>

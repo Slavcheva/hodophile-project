@@ -2,7 +2,7 @@ const models = require('../models');
 
 module.exports = {
   get: (req, res, next) => {
-    // const id = req.params.id;
+    const id = req.params.id;
     // const limit = +req.query.limit;
     // if (limit) {
     //   models.TripCard.find().populate('postId').sort({ _id: -1 }).limit(limit)
@@ -18,8 +18,9 @@ module.exports = {
   post: (req, res, next) => {
     const { description, destination, imageUrl } = req.body;
     const { _id } = req.user;
+    const { username} = req.user;
 
-    models.Trip.create({ description, destination, imageUrl, author: _id })
+    models.Trip.create({ description, destination, imageUrl, author: username })
       .then((createdTrip) => {
         return Promise.all([
           models.User.updateOne({ _id }, { $push: { posts: createdTrip } }),

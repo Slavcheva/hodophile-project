@@ -1,9 +1,8 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import './style.css'
 import postService from "../../services/post-service";
-import Destination from "../Destination";
-import Post from "../TripCard";
-
+import DestinationCard from "../DestinationCard";
+import TripCard from "../TripCard";
 
 const Destinations = () => {
     const [posts, setPosts] = React.useState(null);
@@ -14,14 +13,17 @@ const Destinations = () => {
         });
     }, []);
 
+
     return <div className='container'>
         {posts ?
             <div>
                 {posts.map((post) =>
-                    <Destination key={post._id} imageUrl={post.imageUrl} imageAlt="alt" id={post.id}
-                          destination={post.destination}/>)}
+                    <DestinationCard key={post._id} {...post}>
+                        {post.description}
+                    </DestinationCard>)}
             </div> : <div>Loading...</div>
         }
     </div>;
 };
+
 export default Destinations

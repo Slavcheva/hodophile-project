@@ -5,8 +5,7 @@ import logo from '../../icons8-suitcase-100.png'
 import './style.css'
 
 function Navigation({isLogged, userD}) {
-        // console.log(userD.username);
-        const name = userD.username;
+
     return <nav className="navbar-menu">
         <div className="logo">
             <Link to="/">
@@ -18,7 +17,7 @@ function Navigation({isLogged, userD}) {
             <ul className="nav-links">
                 {
                     isLogged
-                        ? <span>Hello,{name}!</span>
+                        ? <span>Hello, {userD.username}!</span>
                         : undefined
                 }
                 {!isLogged && <Link to="/login" className="header-nav-link">Sign in</Link>}

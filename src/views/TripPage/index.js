@@ -1,10 +1,12 @@
 import React from 'react'
-import './style.css'
-import TripCard from "../../views/TripCard";
 import postService from "../../services/post-service";
+import TripCard from "../TripCard";
 
 
-const Trips = () => {
+
+const TripPage = (props) => {
+    const id = props.match.params.id
+
     const [posts, setPosts] = React.useState(null);
 
     React.useEffect(() => {
@@ -17,14 +19,14 @@ const Trips = () => {
 
         {posts ?
             <div>
-                {posts.map((post) =>
-                    <TripCard key={post._id} {...post}>
-                        {post.description}
-                    </TripCard>)}
+                {posts.filter(e => e._id === id)
+                    .map((post) =>
+                        <TripCard key={post._id} {...post}>
+                            {post.description}
+                        </TripCard>)}
             </div> : <div>Loading...</div>
         }
 
     </div>;
 };
-
-export default Trips
+export default TripPage

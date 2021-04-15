@@ -49,20 +49,6 @@ userSchema.pre('save', function (next) {
     }
     next();
 });
-// let User = mongoose.model('User', userSchema)
-//
-// module.exports = User
-// module.exports.seedAdminUser = () => {
-//     User.find({}).then(users => {
-//         if (users.length > 0) return
-//
-//         User.create({
-//             email: 'admin@admin.com',
-//             username: 'Admin',
-//             password: '1234',
-//             roles: ['Admin']
-//         })
-//     })
-// }
+
 
 module.exports = new Model('User', userSchema);

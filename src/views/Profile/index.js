@@ -1,20 +1,17 @@
 import React from 'react'
 import './style.css'
 
-const Profile = () => {
+const Profile = ({userD}) => {
 
     return <div>
         <p>
             <span>Username:</span>
-            myemail@abv.bg
+            <div>{userD.username}</div>
         </p>
-        <p>
-            <span>Email:</span>
-            myemail@abv.bg
-        </p>
+
         <p>
             <span>Posts:</span>
-            3
+
         </p>
     </div>
 }

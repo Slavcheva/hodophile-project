@@ -6,7 +6,6 @@ import userService from "./services/user-service";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Logout from "./components/Logout";
-import Auth from "./components/Auth";
 
 import Login from "./views/Login";
 import Register from "./views/Register";
@@ -16,7 +15,8 @@ import Destinations from "./views/Destinations";
 import Trips from "./views/Trips";
 import Profile from "./views/Profile";
 import NotFound from "./views/NotFound";
-import TripCard from './views/TripCard'
+import TripPage from './views/TripPage'
+import PostsLoad from "./components/postsLoad";
 
 function parseCookies() {
     return document.cookie.split('; ').reduce((acc, cookie) => {
@@ -72,8 +72,10 @@ class App extends React.Component {
                     {isLogged && <Route path='/create-trip' render={render(CreateTrip, {isLogged})}/>}
                     {isLogged && <Route path='/profile' render={render(Profile, {userD})}/>}
                     <Route path='/destinations' component={Destinations}/>
-                    <Route path='/trips' exact component={Trips}/>
-                    <Route path="/trips/:id" render={render(TripCard, {userD})}/>
+                    <Route path='/trip/:id' component={TripPage}/>
+                    <Route path='/trips' exact render={render(Trips, {userD})}/>
+                    {/*<Route path="/trip/:id" render={render(TripPage, {userD})}/>*/}
+                    {/*<Route path="/trip/:id" render={(props) => <TripPage {...props} />}/>*/}
                     <Route component={NotFound}/>
                 </Switch>
                 {/*</Auth>*/}
