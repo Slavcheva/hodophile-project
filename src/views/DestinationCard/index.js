@@ -15,4 +15,5 @@ function DestinationCard({...trip}) {
     </div>;
 }
 
+
 export default DestinationCard;

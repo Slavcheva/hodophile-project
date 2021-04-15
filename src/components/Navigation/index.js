@@ -17,7 +17,7 @@ function Navigation({isLogged, userD}) {
             <ul className="nav-links">
                 {
                     isLogged
-                        ? <span>Hello, {userD.username}!</span>
+                        ? <span>Hello, {userD.username}! </span>
                         : undefined
                 }
                 {!isLogged && <Link to="/login" className="header-nav-link">Sign in</Link>}

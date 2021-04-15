@@ -15,7 +15,6 @@ function TripCard({imageUrl, imageAlt, destination, children, author, _id}) {
             </span>
         </div>
     </div>;
-
 }
 
 export default TripCard;

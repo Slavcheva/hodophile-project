@@ -2,8 +2,6 @@ import React from 'react'
 import postService from "../../services/post-service";
 import TripCard from "../TripCard";
 
-
-
 const TripPage = (props) => {
     const id = props.match.params.id
 
@@ -16,7 +14,6 @@ const TripPage = (props) => {
     }, []);
 
     return <div>
-
         {posts ?
             <div>
                 {posts.filter(e => e._id === id)
@@ -26,7 +23,6 @@ const TripPage = (props) => {
                         </TripCard>)}
             </div> : <div>Loading...</div>
         }
-
     </div>;
 };
 export default TripPage

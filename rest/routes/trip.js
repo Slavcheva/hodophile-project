@@ -10,4 +10,5 @@ router.put('/:id', auth(), controllers.trip.put);
 
 router.delete('/:id', auth(), controllers.trip.delete);
 
+
 module.exports = router;

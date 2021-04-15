@@ -8,10 +8,8 @@ const Profile = ({userD}) => {
             <span>Username:</span>
             <div>{userD.username}</div>
         </p>
-
         <p>
-            <span>Posts:</span>
-
+            <span>Posts: </span>
         </p>
     </div>
 }

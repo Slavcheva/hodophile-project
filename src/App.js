@@ -16,7 +16,6 @@ import Trips from "./views/Trips";
 import Profile from "./views/Profile";
 import NotFound from "./views/NotFound";
 import TripPage from './views/TripPage'
-import PostsLoad from "./components/postsLoad";
 
 function parseCookies() {
     return document.cookie.split('; ').reduce((acc, cookie) => {
@@ -63,7 +62,6 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Navigation userD={userD} isLogged={isLogged}/>
-                {/*<Auth>*/}
                 <Switch>
                     <Route path='/' exact render={render(Home, {isLogged})}/>
                     <Route path="/register" render={render(Register, {isLogged})}/>
@@ -74,11 +72,8 @@ class App extends React.Component {
                     <Route path='/destinations' component={Destinations}/>
                     <Route path='/trip/:id' component={TripPage}/>
                     <Route path='/trips' exact render={render(Trips, {userD})}/>
-                    {/*<Route path="/trip/:id" render={render(TripPage, {userD})}/>*/}
-                    {/*<Route path="/trip/:id" render={(props) => <TripPage {...props} />}/>*/}
                     <Route component={NotFound}/>
                 </Switch>
-                {/*</Auth>*/}
                 <Footer/>
             </div>
         );

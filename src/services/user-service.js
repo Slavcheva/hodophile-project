@@ -26,18 +26,7 @@ const userService = {
       credentials: 'include'
     }).then(res => res.text());
   },
-  // load: function (id) {
-  //   return fetch(`http://localhost:9000/api/user/${id ? `/${id}` : ''}`,{
-  //   // return fetch(`http://localhost:9000/api/user`,{
-  //     method: 'GET',
-  //     headers: {
-  //       'Content-type': 'application/json',
-  //       'Accept': 'application/json'
-  //     },
-  //     credentials: 'include'
-  //   }).then(res => res.json())
-  //
-  // },
+
 };
 
 export default userService;

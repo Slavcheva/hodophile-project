@@ -13,11 +13,6 @@ module.exports = (app) => {
             .then(user => res.send(user))
             .catch(() => res.status(401).send('HELLO!'));
     });
-    // app.get('/trip/:id', (req, res) => {
-    //     res.send(router.trip)
-    // //         .then(trip => res.send(trip))
-    // //         .catch(() => res.status(401).send('HELLO!'));
-    // });
 
     app.use('/api/user', router.user);
 

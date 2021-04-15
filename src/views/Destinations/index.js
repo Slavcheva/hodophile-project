@@ -13,7 +13,6 @@ const Destinations = () => {
         });
     }, []);
 
-
     return <div className='container'>
         {posts ?
             <div>
