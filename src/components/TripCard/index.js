@@ -6,7 +6,7 @@ function TripCard({imageUrl, imageAlt, destination, children, author, _id}) {
     return <div className="tripCard-wrapper">
 
         <div className='tripCard'>
-            <h5>{destination}</h5>
+            <h3>{destination}</h3>
             <img src={imageUrl} alt={imageAlt}/>
             <p className="description">{children}</p>
             <span>

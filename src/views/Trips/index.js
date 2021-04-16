@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import TripCard from "../../views/TripCard";
+import TripCard from "../../components/TripCard";
 import postService from "../../services/post-service";
 
 
@@ -12,6 +12,7 @@ const Trips = () => {
             setPosts(posts);
         });
     }, []);
+
 
     return <div>
 

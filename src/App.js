@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {Route, Switch} from 'react-router-dom';
 
 import userService from "./services/user-service";
@@ -60,22 +60,25 @@ class App extends React.Component {
     render() {
         const {isLogged, userD} = this.state;
         return (
-            <div className="App">
-                <Navigation userD={userD} isLogged={isLogged}/>
-                <Switch>
-                    <Route path='/' exact render={render(Home, {isLogged})}/>
-                    <Route path="/register" render={render(Register, {isLogged})}/>
-                    <Route path="/login" render={render(Login, {isLogged, login: this.login})}/>
-                    <Route path="/logout" render={render(Logout, {isLogged, logout: this.logout})}/>
-                    {isLogged && <Route path='/create-trip' render={render(CreateTrip, {isLogged})}/>}
-                    {isLogged && <Route path='/profile' render={render(Profile, {userD})}/>}
-                    <Route path='/destinations' component={Destinations}/>
-                    <Route path='/trip/:id' component={TripPage}/>
-                    <Route path='/trips' exact render={render(Trips, {userD})}/>
-                    <Route component={NotFound}/>
-                </Switch>
+            <Fragment>
+                <div className="App">
+                    <Navigation userD={userD} isLogged={isLogged}/>
+                    <Switch>
+                        <Route path='/' exact render={render(Home, {isLogged})}/>
+                        <Route path="/register" render={render(Register, {isLogged})}/>
+                        <Route path="/login" render={render(Login, {isLogged, login: this.login})}/>
+                        <Route path="/logout" render={render(Logout, {isLogged, logout: this.logout})}/>
+                        {isLogged && <Route path='/create-trip' render={render(CreateTrip, {isLogged})}/>}
+                        {isLogged && <Route path='/profile' render={render(Profile, {isLogged,userD})}/>}
+                        {/*{isLogged && <Route path='/profile' component={Profile}/>}*/}
+                        <Route path='/destinations' component={Destinations}/>
+                        <Route path='/trip/:id' component={TripPage}/>
+                        <Route path='/trips' exact render={render(Trips, {userD})}/>
+                        <Route component={NotFound}/>
+                    </Switch>
+                </div>
                 <Footer/>
-            </div>
+            </Fragment>
         );
     }
 }

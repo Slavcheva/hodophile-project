@@ -1,6 +1,7 @@
 import React from 'react'
 import postService from "../../services/post-service";
-import TripCard from "../TripCard";
+import TripCard from "../../components/TripCard";
+
 
 const TripPage = (props) => {
     const id = props.match.params.id

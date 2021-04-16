@@ -5,7 +5,7 @@ import logo from '../../icons8-suitcase-100.png'
 import './style.css'
 
 function Navigation({isLogged, userD}) {
-
+    const name = userD.username
     return <nav className="navbar-menu">
         <div className="logo">
             <Link to="/">
@@ -17,7 +17,7 @@ function Navigation({isLogged, userD}) {
             <ul className="nav-links">
                 {
                     isLogged
-                        ? <span>Hello, {userD.username}! </span>
+                        ? <span>Hello, {name}! </span>
                         : undefined
                 }
                 {!isLogged && <Link to="/login" className="header-nav-link">Sign in</Link>}
@@ -27,7 +27,6 @@ function Navigation({isLogged, userD}) {
             </ul>
         </div>
     </nav>
-
 }
 
 export default Navigation

@@ -1,8 +1,7 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import './style.css'
 import postService from "../../services/post-service";
-import DestinationCard from "../DestinationCard";
-import TripCard from "../TripCard";
+import DestinationCard from "../../components/DestinationCard";
 
 const Destinations = () => {
     const [posts, setPosts] = React.useState(null);
