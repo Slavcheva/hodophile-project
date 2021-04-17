@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './style.css'
 import TripCard from "../../components/TripCard";
 import postService from "../../services/post-service";
@@ -13,9 +14,7 @@ const Trips = () => {
         });
     }, []);
 
-
     return <div>
-
         {posts ?
             <div>
                 {posts.reverse().map((post) =>
@@ -24,7 +23,6 @@ const Trips = () => {
                     </TripCard>)}
             </div> : <div>Loading...</div>
         }
-
     </div>;
 };
 

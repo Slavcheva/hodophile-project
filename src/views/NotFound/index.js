@@ -3,7 +3,7 @@ import './style.css'
 
 
 const NotFound = () => {
-    return <div>
+    return <div className='not-found'>
         <h1>Not Found</h1>
         <h2>404</h2>
     </div>

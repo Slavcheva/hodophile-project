@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DestinationCard component should render correctly 1`] = `
+<div
+  className="card-wrapper"
+>
+  <div
+    className="card-container"
+  >
+    <Link
+      to="/trip/undefined"
+    >
+      <h5
+        className="card-header"
+      />
+      <div>
+        <img />
+      </div>
+      <span
+        className="card-author"
+      >
+        <small>
+          Author: 
+        </small>
+      </span>
+    </Link>
+  </div>
+</div>
+`;

@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Logout from "./components/Logout";
 import ContextWrapper from "./components/ContextWrapper";
+import PrivateRoute from "./components/PrivateRoute";
 
 import Login from "./views/Login";
 import Register from "./views/Register";
@@ -60,8 +61,8 @@ class App extends React.Component {
                             <Route path="/register" component={Register}/>
                             <Route path="/login" render={render(Login, {login: this.login})}/>
                             <Route path="/logout" render={render(Logout, {logout: this.logout})}/>
-                            <Route path='/create-trip' component={CreateTrip}/>}
-                            <Route path='/profile' render={render(Profile, {userD})}/>}
+                            <PrivateRoute path='/create-trip' component={CreateTrip}/>}
+                            <PrivateRoute path='/profile' render={render(Profile, {userD})}/>}
                             <Route path='/destinations' component={Destinations}/>
                             <Route path='/trips' component={Trips}/>
                             <Route path='/trip/:id' component={TripPage}/>

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TripCard component should render correctly 1`] = `
+<div
+  className="tripCard-wrapper"
+>
+  <div
+    className="tripCard"
+  >
+    <h3 />
+    <img />
+    <p
+      className="description"
+    />
+    <span>
+      <small>
+        Author: 
+      </small>
+    </span>
+  </div>
+</div>
+`;

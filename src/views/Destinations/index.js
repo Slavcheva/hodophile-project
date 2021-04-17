@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './style.css'
 import postService from "../../services/post-service";
 import DestinationCard from "../../components/DestinationCard";

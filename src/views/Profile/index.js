@@ -1,8 +1,8 @@
-import React, {Fragment} from 'react'
+import React from 'react'
+
 import './style.css'
 import postService from "../../services/post-service";
 import TripCard from "../../components/TripCard";
-import userService from "../../services/user-service";
 
 const Profile = ({userD}) => {
     const name = userD.username

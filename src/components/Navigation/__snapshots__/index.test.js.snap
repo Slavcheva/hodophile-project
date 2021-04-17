@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component should render correctly if user is is logged 1`] = `
+<nav
+  className="navbar-menu"
+>
+  <div
+    className="logo"
+  >
+    <Link
+      to="/"
+    >
+      <img
+        alt="header-logo"
+        className="header-logo"
+        src="icons8-suitcase-100.png"
+      />
+    </Link>
+  </div>
+  <h2>
+    Hodophile - "One who loves to travel"
+  </h2>
+  <div
+    className="navbar"
+  >
+    <ul
+      className="nav-links"
+    >
+      <span>
+        Hello, 
+        Pesho
+        ! 
+      </span>
+      <Link
+        className="header-nav-link"
+        to="/logout"
+      >
+        Sign out
+      </Link>
+    </ul>
+  </div>
+</nav>
+`;
+
+exports[`Navigation component should render correctly if user is not is logged 1`] = `
+<nav
+  className="navbar-menu"
+>
+  <div
+    className="logo"
+  >
+    <Link
+      to="/"
+    >
+      <img
+        alt="header-logo"
+        className="header-logo"
+        src="icons8-suitcase-100.png"
+      />
+    </Link>
+  </div>
+  <h2>
+    Hodophile - "One who loves to travel"
+  </h2>
+  <div
+    className="navbar"
+  >
+    <ul
+      className="nav-links"
+    >
+      <Link
+        className="header-nav-link"
+        to="/login"
+      >
+        Sign in
+      </Link>
+      <Link
+        className="header-nav-link"
+        to="/register"
+      >
+        Sign up
+      </Link>
+    </ul>
+  </div>
+</nav>
+`;
