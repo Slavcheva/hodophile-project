@@ -10,8 +10,8 @@ const Home = ({isLogged}) => {
                 <p>
                     <Link to="/destinations">Destinations</Link>
                     <Link to="/trips">Trip Notes</Link>
-                    {isLogged && <Link to="/profile">Profile</Link>}
                     {isLogged && <Link to="/create-trip">Create Trip Note</Link>}
+                    {isLogged && <Link to="/profile">Profile</Link>}
                 </p>
             </div>
             <p>Това е място за всички завладени от магията на пътешествията.

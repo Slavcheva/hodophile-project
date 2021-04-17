@@ -16,7 +16,7 @@ const Profile = ({userD}) => {
     }, []);
 
     return <div>
-        <h2>Username: </h2><span>{name}</span>
+        <h2>Username: {name}</h2>
         <h2>Your posts: </h2>
         {posts ?
             <div>
