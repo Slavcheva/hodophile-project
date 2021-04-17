@@ -3,8 +3,9 @@ import {Link} from "react-router-dom";
 
 import logo from '../../icons8-suitcase-100.png'
 import './style.css'
+import {AuthContext} from "../ContextWrapper";
 
-function Navigation({isLogged, userD}) {
+function Navigation({userD}) {
     const name = userD.username
     return <nav className="navbar-menu">
         <div className="logo">
@@ -13,19 +14,23 @@ function Navigation({isLogged, userD}) {
             </Link>
         </div>
         <h2>Hodophile - "One who loves to travel"</h2>
-        <div className="navbar">
-            <ul className="nav-links">
-                {
-                    isLogged
-                        ? <span>Hello, {name}! </span>
-                        : undefined
-                }
-                {!isLogged && <Link to="/login" className="header-nav-link">Sign in</Link>}
-                {!isLogged && <Link to="/register" className="header-nav-link">Sign up</Link>}
-                {isLogged && <Link to="/logout" className="header-nav-link">Sign out</Link>}
-
-            </ul>
-        </div>
+        <AuthContext.Consumer>
+            {
+                value => (
+                    <div className="navbar">
+                        <ul className="nav-links">
+                            {
+                                value.isLogged
+                                    ? <span>Hello, {name}! </span>
+                                    : undefined
+                            }
+                            {!value.isLogged && <Link to="/login" className="header-nav-link">Sign in</Link>}
+                            {!value.isLogged && <Link to="/register" className="header-nav-link">Sign up</Link>}
+                            {value.isLogged && <Link to="/logout" className="header-nav-link">Sign out</Link>}
+                        </ul>
+                    </div>
+                )}
+        </AuthContext.Consumer>
     </nav>
 }
 

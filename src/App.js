@@ -6,6 +6,7 @@ import userService from "./services/user-service";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Logout from "./components/Logout";
+import ContextWrapper from "./components/ContextWrapper";
 
 import Login from "./views/Login";
 import Register from "./views/Register";
@@ -17,13 +18,6 @@ import Profile from "./views/Profile";
 import NotFound from "./views/NotFound";
 import TripPage from './views/TripPage'
 
-function parseCookies() {
-    return document.cookie.split('; ').reduce((acc, cookie) => {
-        const [cookieName, cookieValue] = cookie.split('=');
-        acc[cookieName] = cookieValue;
-        return acc;
-    }, {})
-}
 
 function render(Cmp, otherProps) {
     return function (props) {
@@ -31,15 +25,12 @@ function render(Cmp, otherProps) {
     };
 }
 
-
 class App extends React.Component {
 
     constructor(props) {
         super(props);
-        const cookies = parseCookies();
-        const isLogged = !!cookies['x-auth-token'];
         const userD = {};
-        this.state = {isLogged, userD};
+        this.state = {userD};
     }
 
     logout = (history) => {
@@ -58,24 +49,25 @@ class App extends React.Component {
     }
 
     render() {
-        const {isLogged, userD} = this.state;
+        const {userD} = this.state;
         return (
             <Fragment>
                 <div className="App">
-                    <Navigation userD={userD} isLogged={isLogged}/>
-                    <Switch>
-                        <Route path='/' exact render={render(Home, {isLogged})}/>
-                        <Route path="/register" render={render(Register, {isLogged})}/>
-                        <Route path="/login" render={render(Login, {isLogged, login: this.login})}/>
-                        <Route path="/logout" render={render(Logout, {isLogged, logout: this.logout})}/>
-                        {isLogged && <Route path='/create-trip' render={render(CreateTrip, {isLogged})}/>}
-                        {isLogged && <Route path='/profile' render={render(Profile, {isLogged,userD})}/>}
-                        {/*{isLogged && <Route path='/profile' component={Profile}/>}*/}
-                        <Route path='/destinations' component={Destinations}/>
-                        <Route path='/trip/:id' component={TripPage}/>
-                        <Route path='/trips' exact render={render(Trips, {userD})}/>
-                        <Route component={NotFound}/>
-                    </Switch>
+                    <ContextWrapper>
+                        <Navigation userD={userD}/>
+                        <Switch>
+                            <Route path='/' exact component={Home}/>
+                            <Route path="/register" component={Register}/>
+                            <Route path="/login" render={render(Login, {login: this.login})}/>
+                            <Route path="/logout" render={render(Logout, {logout: this.logout})}/>
+                            <Route path='/create-trip' component={CreateTrip}/>}
+                            <Route path='/profile' render={render(Profile, {userD})}/>}
+                            <Route path='/destinations' component={Destinations}/>
+                            <Route path='/trips' component={Trips}/>
+                            <Route path='/trip/:id' component={TripPage}/>
+                            <Route component={NotFound}/>
+                        </Switch>
+                    </ContextWrapper>
                 </div>
                 <Footer/>
             </Fragment>

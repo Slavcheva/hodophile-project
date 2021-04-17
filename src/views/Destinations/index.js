@@ -15,7 +15,7 @@ const Destinations = () => {
     return <div className='container'>
         {posts ?
             <div>
-                {posts.map((post) =>
+                {posts.reverse().map((post) =>
                     <DestinationCard key={post._id} {...post}>
                         {post.description}
                     </DestinationCard>)}

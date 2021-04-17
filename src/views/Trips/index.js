@@ -18,7 +18,7 @@ const Trips = () => {
 
         {posts ?
             <div>
-                {posts.map((post) =>
+                {posts.reverse().map((post) =>
                     <TripCard key={post._id} {...post}>
                         {post.description}
                     </TripCard>)}

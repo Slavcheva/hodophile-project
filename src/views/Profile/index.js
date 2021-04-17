@@ -21,6 +21,7 @@ const Profile = ({userD}) => {
         {posts ?
             <div>
                 {posts.filter(post => post.author === name)
+                    .reverse()
                     .map((post) =>
                             <TripCard key={post._id} {...post}>
                                 {post.description}
