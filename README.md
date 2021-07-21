@@ -1,4 +1,7 @@
-This is my SoftUni React Project.
+hodophile-project is a web site built as web project for the ReactJS fundamentals course at SoftUni.
+
+Hodophile means "One who loves to travel". 
+
 
 In the project directory, you can run:
 
