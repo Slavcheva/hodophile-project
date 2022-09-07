@@ -14,20 +14,22 @@ const Profile = ({userD}) => {
             setPosts(posts);
         });
     }, []);
+    console.log(posts);
+
+    // let filteredPosts = posts.filter(post => post.author === name);
 
     return <div>
-        <h2>Username: {name}</h2>
-        <h2>Your posts: </h2>
-        {posts ?
+        {posts?(
             <div>
+                <h2>Your posts: </h2>
                 {posts.filter(post => post.author === name)
                     .reverse()
                     .map((post) =>
-                            <TripCard key={post._id} {...post}>
-                                {post.description}
-                            </TripCard>
+                        <TripCard key={post._id} {...post}>
+                            {post.description}
+                        </TripCard>
                     )}
-            </div> : <div>Loading...</div>
+            </div> ): (<h2>You haven't posts yet!</h2>)
         }
     </div>;
 };

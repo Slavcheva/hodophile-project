@@ -5,16 +5,14 @@ import {Link} from "react-router-dom";
 
 function DestinationCard({...trip}) {
 
-    return <div className="card-wrapper">
-        <div className='card-container'>
+    return <div className='destinationCard'>
             <Link to={`/trip/${trip._id}`}>
-                <h5 className='card-header'>{trip.destination}</h5>
+                <div className='card-header'>{trip.destination}</div>
                 <div>
-                <img src={trip.imageUrl} alt={trip.imageAlt}/>
+                <img src={trip.imageUrl} alt={trip.destination}/>
                 </div>
-                <span className='card-author'><small>Author: </small>{trip.author}</span>
             </Link>
-        </div>
+        <span className='card-author'><small>Author: </small>{trip.author}</span>
     </div>;
 }
 

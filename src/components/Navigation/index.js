@@ -9,26 +9,25 @@ function Navigation({userD}) {
     const name = userD.username
 
     return <nav className="navbar-menu">
-        <div className="logo">
-            <Link to="/">
-                <img src={logo} alt="header-logo" className="header-logo"/>
+            <Link to="/" className="nav-logo">
+                <img src={logo} alt="header-logo"/>
+                <p>Hodophiles</p>
             </Link>
-        </div>
-        <h2>Hodophile - "One who loves to travel"</h2>
+
         <AuthContext.Consumer>
             {
-                value => (<div className="navbar">
-                    <ul className="nav-links">
-                        {
-                            value.isLogged
-                                ? <span>Hello, {name}! </span>
-                                : undefined
-                        }
-                        {!value.isLogged && <Link to="/login" className="header-nav-link">Sign in</Link>}
-                        {!value.isLogged && <Link to="/register" className="header-nav-link">Sign up</Link>}
-                        {value.isLogged && <Link to="/logout" className="header-nav-link">Sign out</Link>}
-                    </ul>
-                </div>)
+                value => (
+                        <ul className="nav-links">
+                            {
+                                value.isLogged
+                                    ? <span>Hello, {name}! </span>
+                                    : undefined
+                            }
+                            {!value.isLogged && <Link to="/login" className="nav-link">Sign in</Link>}
+                            {!value.isLogged && <Link to="/register" className="nav-link">Sign up</Link>}
+                            {value.isLogged && <Link to="/logout" className="nav-link">Sign out</Link>}
+                        </ul>
+                )
             }
         </AuthContext.Consumer>
     </nav>

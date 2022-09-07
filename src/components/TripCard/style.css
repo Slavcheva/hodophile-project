@@ -1,31 +1,56 @@
+.tripCard {
+    box-shadow: 0 5px 10px 5px #cecece;
+    margin: 1em 0;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: white;
+}
 
-div .tripCard-wrapper {
-    width: 50%;
-    margin: 0 auto;
-    padding: 3em 0;
+.tripCard h3 {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
     text-align: center;
-    border-radius: 1em;
 }
 
-div .tripCard-wrapper p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.tripCard .card-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
 }
 
-div .welcome {
-    padding: 10px;
-    box-shadow: 0 5px 10px 5px #cecece;
+.tripCard .card-img:before {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
 }
 
-.tripCard{
-    padding: 10px;
-    box-shadow: 0 5px 10px 5px #cecece;
-    font: 30px/1.5 'Cormorant', cursive;
-}
-
-img {
-    max-width: 300px;
+.tripCard .card-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     height: auto;
-    margin: 0 auto;
+}
+
+.tripCard .card-content span {
+    color: rgba(0, 0, 0, 0.44);
+    margin-top: 2em;
+}
+
+.tripCard .card-content p {
+    margin: 1em 0;
+    text-align: justify;
+}
+
+@media (min-width: 1024px) {
+    .tripCard {
+        padding: 1em 3em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .tripCard {
+        padding: 2em 5em;
+    }
 }

@@ -1,0 +1,50 @@
+.sub-nav {
+    padding: 10px;
+    box-shadow: 0 5px 10px 5px #cecece;
+    margin: 1em auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0.3em;
+    background-color: white;
+    flex-direction: column;
+
+}
+
+.sub-nav a {
+    padding: 10px;
+    background-color: #D7A070;
+    border-radius: 0.3em;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    margin: 0.2rem;
+    border: 2px solid #D7A070;
+}
+
+.sub-nav a:hover {
+    background-color: white;
+    color: #D7A070;
+    border: 2px solid #D7A070;
+}
+
+.sub-nav p {
+    font-size: 30px;
+    margin: 15px;
+}
+
+@media ( min-width: 700px) {
+    .sub-nav {
+        flex-direction: row;
+    }
+    .sub-nav a {
+        width: 40%;
+    }
+}
+
+@media ( min-width: 1200px) {
+    .sub-nav a {
+        width: 20%;
+    }
+}

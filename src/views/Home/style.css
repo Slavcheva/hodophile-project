@@ -1,48 +1,12 @@
-/*main{*/
-/*    background: lightcyan;*/
-/*}*/
-div.welcome-wrapper {
-    width: 40%;
-    margin: 0 auto;
-    padding: 3em 0;
+.home {
+    padding: 3em 1em;
+    text-align: justify;
+}
+
+.home h1{
+    font-size: 2em;
+    padding-bottom: 0.5em;
     text-align: center;
-    border-radius: 1em;
+    font-family: 'Tangerine', cursive;
 
 }
-
-div.welcome-wrapper p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font: 30px/1.5 'Cormorant', serif;;
-}
-
-div.welcome {
-    padding: 10px;
-    box-shadow: 0 5px 10px 5px #cecece;
-}
-
-.welcome a {
-    padding: 10px;
-    background-color: #D7A070;
-    border-radius: 0.5em;
-    outline: none;
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-    border: 2px solid #D7A070;
-    font: 35px/1.5 'Tangerine', cursive;
-
-}
-
-div.welcome a:hover {
-    background-color: white;
-    color: #D7A070;
-    border: 2px solid #D7A070;
-}
-
-div.welcome p {
-    font-size: 30px;
-    margin: 15px;
-}
-

@@ -1,34 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Tangerine:wght@700&display=swap');
-
-
-* {
-    box-sizing: border-box;
-}
-
-*:before, *:after {
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Work+Sans:wght@600&display=swap');
+*, *:before, *:after {
     box-sizing: inherit;
-}
-
-body {
     margin: 0;
     padding: 0;
-    font: 30px/1.5 'Tangerine', cursive;
-}
-.error{
-    color: red;
 }
 
-th {
-    width: 100% !important;
+html {
+    box-sizing: border-box;
+    font: 40px/1.2 'Tangerine', cursive;
 }
 
-
-@media screen and (max-width: 800px) {
-    nav.navbar-menu a {
-        width: 100%;
-        padding: 10px 5px;
-    }
-
-
+body{
+    font: inherit;
+    background-color: #eee0d6;
 }

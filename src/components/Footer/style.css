@@ -5,7 +5,5 @@ footer {
     text-align: center;
     background-color: #D7A070;
     padding: 1px 0;
-    font-size: 25px;
-    font-weight: bold;
-    height: 3em;
+    height: auto;
 }

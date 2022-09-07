@@ -1,33 +1,58 @@
-nav img {
-    max-width: 80px;
-    height: auto;
-    margin: 0 auto;
-}
-nav.navbar-menu {
+.navbar-menu {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #D7A070;
+    flex-direction: column;
 }
-.nav-links, h2{
-    margin: 5px;
-}
-.nav-links a {
-    /*display: flex;*/
-    border-radius: 0.5em;
-    justify-content: space-evenly;
+
+.nav-logo {
+    display: flex;
     text-decoration: none;
     color: black;
-    width: 15%;
     align-items: center;
-    padding: 10px 10px;
+    border-radius: 0.3em;
     border: 1px solid #D7A070;
-    font-size: 35px;
+}
+
+.nav-logo:hover {
+    color: white;
+}
+
+.nqv-logo img {
+    max-width: 80px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
 .nav-links a:hover {
-    color: #D7A070;
-    background-color: white;
+    color: white;
 }
+
+.nav-link {
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: black;
+    padding: 0.3em 0.5em;
+    border: 1px solid #D7A070;
+}
+
+@media ( min-width: 700px) {
+    .navbar-menu {
+        flex-direction: row;
+    }
+    .nav-link{
+        padding: 0.3em 1em;
+    }
+}
+
+

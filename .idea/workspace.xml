@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27208268-c34d-4e91-a710-f23945e14979" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/index.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PrivateRoute.js" afterDir="false" />
+    <list default="true" id="27208268-c34d-4e91-a710-f23945e14979" name="Default Changelist" comment="Change styles, add responsive styles">
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SubNav/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SubNav/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/config/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/config/database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/config/express.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/config/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/controllers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/controllers/trip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/controllers/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/models/TokenBlacklist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/models/Trip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/models/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/routes/trip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/routes/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/utils/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/utils/jwt.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContextWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContextWrapper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DestinationCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DestinationCard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DestinationCard/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DestinationCard/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/CreateTrip/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateTrip/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TripCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TripCard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TripCard/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TripCard/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Destinations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Destinations/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Destinations/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Destinations/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/NotFound/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NotFound/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/TripPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TripPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Trips/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Trips/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Profile/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Profile/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,7 +82,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -66,16 +93,16 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/Logout" />
       <recent name="$PROJECT_DIR$/src/components/Navigation" />
       <recent name="$PROJECT_DIR$/src/views" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -100,7 +127,44 @@
       <workItem from="1618379633360" duration="61889000" />
       <workItem from="1618551952569" duration="42476000" />
       <workItem from="1618662628365" duration="151000" />
-      <workItem from="1618663467048" duration="1199000" />
+      <workItem from="1618663467048" duration="2789000" />
+      <workItem from="1622879339723" duration="156000" />
+      <workItem from="1626843357419" duration="1023000" />
+      <workItem from="1626844682913" duration="252000" />
+      <workItem from="1626971170829" duration="545000" />
+      <workItem from="1628055209935" duration="335000" />
+      <workItem from="1628055763543" duration="7000" />
+      <workItem from="1628061244332" duration="1000" />
+      <workItem from="1629349960825" duration="112000" />
+      <workItem from="1629618938679" duration="12635000" />
+      <workItem from="1629701061061" duration="904000" />
+      <workItem from="1629705395518" duration="27076000" />
+      <workItem from="1630233469475" duration="2912000" />
+      <workItem from="1630238912582" duration="619000" />
+      <workItem from="1638959693532" duration="6066000" />
+      <workItem from="1639559689992" duration="3889000" />
+      <workItem from="1639567031850" duration="3095000" />
+      <workItem from="1639600905118" duration="2046000" />
+      <workItem from="1639845003136" duration="561000" />
+      <workItem from="1639848329741" duration="1000" />
+      <workItem from="1639848472279" duration="95000" />
+      <workItem from="1639900402733" duration="4226000" />
+      <workItem from="1649453187084" duration="329000" />
+      <workItem from="1649484007415" duration="274000" />
+      <workItem from="1649498912868" duration="9000" />
+      <workItem from="1649500117034" duration="1000" />
+      <workItem from="1649601816661" duration="633000" />
+      <workItem from="1650572620412" duration="845000" />
+      <workItem from="1651741315160" duration="2853000" />
+      <workItem from="1655976402535" duration="423000" />
+      <workItem from="1655977506580" duration="2555000" />
+      <workItem from="1660741195051" duration="593000" />
+      <workItem from="1660804255620" duration="1651000" />
+      <workItem from="1660900583952" duration="1000" />
+      <workItem from="1661092345391" duration="39000" />
+      <workItem from="1661321798398" duration="149000" />
+      <workItem from="1662378950526" duration="30000" />
+      <workItem from="1662379290371" duration="38200000" />
     </task>
     <task id="LOCAL-00001" summary="Forms update">
       <created>1618131705112</created>
@@ -193,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618655021079</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Last Commit :)">
+      <created>1618664851004</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618664851004</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +292,12 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="commit" />
     <MESSAGE value="Add Context" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Context" />
+    <MESSAGE value="Last Commit :)" />
+    <MESSAGE value="Change styles, add responsive styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change styles, add responsive styles" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

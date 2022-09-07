@@ -1,12 +1,25 @@
-.container{
+.destinations{
     position: relative;
-    display: table;
+    display: flex;
     width: 100%;
     margin-bottom: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
+@media (min-width: 1024px) {
+    .destinations{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .destinationCard {
+        max-width:40%;
+    }
+}
+
+@media ( min-width: 1600px) {
+    .destinationCard {
+        max-width:30%;
+    }
 }

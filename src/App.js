@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import {Route, Switch} from 'react-router-dom';
-
+import "./App.css"
 import userService from "./services/user-service";
 
 import Navigation from "./components/Navigation";
@@ -18,6 +18,7 @@ import Trips from "./views/Trips";
 import Profile from "./views/Profile";
 import NotFound from "./views/NotFound";
 import TripPage from './views/TripPage'
+import SubNav from "./components/SubNav";
 
 
 function render(Cmp, otherProps) {
@@ -56,21 +57,26 @@ class App extends React.Component {
                 <div className="App">
                     <ContextWrapper>
                         <Navigation userD={userD}/>
-                        <Switch>
-                            <Route path='/' exact component={Home}/>
-                            <Route path="/register" component={Register}/>
-                            <Route path="/login" render={render(Login, {login: this.login})}/>
-                            <Route path="/logout" render={render(Logout, {logout: this.logout})}/>
-                            <PrivateRoute path='/create-trip' component={CreateTrip}/>}
-                            <PrivateRoute path='/profile' render={render(Profile, {userD})}/>}
-                            <Route path='/destinations' component={Destinations}/>
-                            <Route path='/trips' component={Trips}/>
-                            <Route path='/trip/:id' component={TripPage}/>
-                            <Route component={NotFound}/>
-                        </Switch>
+                        <main>
+                            <SubNav/>
+                            <div className="content">
+                            <Switch>
+                                <Route path='/' exact component={Home}/>
+                                <Route path="/register" component={Register}/>
+                                <Route path="/login" render={render(Login, {login: this.login})}/>
+                                <Route path="/logout" render={render(Logout, {logout: this.logout})}/>
+                                <PrivateRoute path='/create-trip' component={CreateTrip}/>}
+                                <PrivateRoute path='/profile' render={render(Profile, {userD})}/>}
+                                <Route path='/destinations' component={Destinations}/>
+                                <Route path='/trips' component={Trips}/>
+                                <Route path='/trip/:id' component={TripPage}/>
+                                <Route component={NotFound}/>
+                            </Switch>
+                            </div>
+                        </main>
                     </ContextWrapper>
+                    <Footer/>
                 </div>
-                <Footer/>
             </Fragment>
         );
     }

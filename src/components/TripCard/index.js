@@ -3,12 +3,13 @@ import './style.css'
 
 function TripCard({imageUrl, imageAlt, destination, children, author, _id}) {
 
-    return <div className="tripCard-wrapper">
-
-        <div className='tripCard'>
-            <h3>{destination}</h3>
+    return <div className='tripCard'>
+        <h3>{destination}</h3>
+        <div className="card-img">
             <img src={imageUrl} alt={imageAlt}/>
-            <p className="description">{children}</p>
+        </div>
+        <div className="card-content">
+            <p>{children}</p>
             <span>
             <small>Author: </small>
                 {author}

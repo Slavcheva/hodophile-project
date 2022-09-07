@@ -1,0 +1,44 @@
+main{
+    display: flex;
+    margin: 0 0.5em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+    font: 22px 'Cormorant', cursive;
+}
+
+.error{
+    color: red;
+}
+
+@media (min-width: 700px) {
+    .content {
+        font-size:30px
+    }
+}
+
+@media ( min-width: 1300px) {
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .content{
+        font-size:35px
+    }
+}
+
+@media ( min-width: 1600px) {
+    main{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media ( min-width: 1900px) {
+    main{
+        margin: 0 auto;
+        width: 60%;
+    }
+}
