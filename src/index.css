@@ -15,3 +15,8 @@ body{
     font: inherit;
     background-color: #eee0d6;
 }
+
+h2{
+    margin-top: 2em;
+    text-align: center;
+}

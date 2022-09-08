@@ -1,51 +1,52 @@
 
-.form-wrapper {
-    padding: 1em 0 3em 0;
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-}
+/*.form-wrapper {*/
+/*    padding: 1em 0 3em 0;*/
+/*    !*width: 60%;*!*/
+/*    margin: 0 auto;*/
+/*    text-align: center;*/
+/*}*/
 
-.form-wrapper form {
-    width: 40%;
-    margin: 0 auto;
-}
+/*.form-wrapper form {*/
+/*    !*width: 40%;*!*/
+/*    margin: 0 auto;*/
+/*}*/
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
+/*.form-group {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin-bottom: 1em;*/
+/*}*/
 
-.form-group label {
-    padding-right: 1em;
-    text-align: left;
-}
+/*.form-group label {*/
+/*    padding-right: 1em;*/
+/*    text-align: left;*/
+/*}*/
 
-.form-wrapper button, input, textarea {
-    padding: 10px 5px;
-    outline: none;
-    border-radius: 0.5em;
-    border: 1px solid #A678CF;
-}
+/*.form-wrapper button, input, textarea {*/
+/*    padding: 10px 5px;*/
+/*    outline: none;*/
+/*    border-radius: 0.5em;*/
+/*    border: 1px solid #A678CF;*/
+/*}*/
 
-.form-wrapper button {
-    padding: 10px 20px;
-    margin: 0 auto;
-    background-color: #A678CF;
-    color: black;
-    border: none;
-    /*font-size: 18px;*/
-    font-weight: bold;
-    font: 30px/1.5 'Tangerine', cursive;
-    /*border: 2px solid #A678CF;*/
-    width: 50%;
-}
+/*.form-wrapper button {*/
+/*    padding: 10px 20px;*/
+/*    margin: 0 auto;*/
+/*    background-color: #A678CF;*/
+/*    color: black;*/
+/*    border: none;*/
+/*    !*font-size: 18px;*!*/
+/*    font-weight: bold;*/
+/*    font: 30px/1.5 'Tangerine', cursive;*/
+/*    !*border: 2px solid #A678CF;*!*/
+/*    width: 50%;*/
+/*}*/
 
-.form-wrapper button:hover {
-    background-color: white;
-    color: #A678CF;
-    border: 2px solid #A678CF;
-    font-size: 30px;
-    font-weight: bold;
-}
+/*.form-wrapper button:hover {*/
+/*    background-color: white;*/
+/*    color: #A678CF;*/
+/*    border: 2px solid #A678CF;*/
+/*    font-size: 30px;*/
+/*    font-weight: bold;*/
+/*}*/
+/*...........................*/

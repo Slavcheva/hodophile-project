@@ -38,8 +38,7 @@ class Register extends React.Component {
 
         return (
             <div className="form-wrapper">
-                <h1>Sign up</h1>
-                <div className="form-group">
+                <h2>Sign up</h2>
                     <form>
                         <div className='form-group'>
                             <label htmlFor='email'>Email:</label>
@@ -70,7 +69,6 @@ class Register extends React.Component {
                             <button type='button' onClick={this.submitHandler}>Sign up</button>
                         </div>
                     </form>
-                </div>
             </div>
         )
     }

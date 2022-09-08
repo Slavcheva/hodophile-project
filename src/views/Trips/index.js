@@ -15,6 +15,7 @@ const Trips = () => {
     }, []);
 
     return <div>
+        <h2>Trip notes</h2>
         {posts ?
             <div>
                 {posts.reverse().map((post) =>

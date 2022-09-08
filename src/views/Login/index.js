@@ -23,7 +23,7 @@ class Login extends React.Component {
         const {error} = this.state
 
         return <div className="form-wrapper">
-            <h1>Sign in</h1>
+            <h2>Sign in</h2>
             <form>
                 <div className="form-group">
                     <label>Username</label>

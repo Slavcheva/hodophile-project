@@ -14,6 +14,7 @@ const Destinations = () => {
     }, []);
 
     return <div className='container'>
+        <h2>Destinations</h2>
         {posts ?
             <div className='destinations'>
                 {posts.reverse().map((post) =>

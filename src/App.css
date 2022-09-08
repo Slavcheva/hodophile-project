@@ -1,43 +1,107 @@
-main{
+main {
     display: flex;
     margin: 0 0.5em;
     flex-direction: column;
     justify-content: center;
 }
 
-.content{
+.content {
     font: 22px 'Cormorant', cursive;
 }
 
-.error{
+.content button {
+    font: 40px/1.2 'Tangerine', cursive;
+}
+
+.error {
     color: red;
 }
 
+
+.form-wrapper {
+    padding: 1em 0 3em 0;
+    /*width: 60%;*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-wrapper form {
+    /*    !*width: 40%;*!*/
+    margin: 0 auto;
+
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+}
+
+.form-group label {
+    padding-right: 1em;
+    text-align: left;
+}
+
+.form-wrapper button, input, textarea {
+    padding: 10px;
+    outline: none;
+    border-radius: 0.3em;
+    border: 1px solid #D7A070;
+    height: 50px;
+}
+.form-wrapper textarea{
+    height: 200px;
+}
+
+.form-wrapper button {
+    padding: 0 1em;
+    margin: 0 auto;
+    background-color: #D7A070;
+    color: black;
+    font-family: 'Tangerine', cursive;
+    border: 2px solid #D7A070;
+}
+
+.form-wrapper button:hover {
+    background-color: white;
+    color: #D7A070;
+    border: 2px solid #D7A070;
+}
+
+
 @media (min-width: 700px) {
     .content {
-        font-size:30px
+        font-size: 30px
+    }
+
+    .form-wrapper {
+        width: 50%;
+
     }
 }
 
 @media ( min-width: 1300px) {
-    main{
+    main {
         width: 95%;
         margin: 0 auto;
     }
-    .content{
-        font-size:35px
+
+    .content {
+        font-size: 35px
     }
 }
 
 @media ( min-width: 1600px) {
-    main{
+    main {
         margin: 0 auto;
         width: 80%;
     }
 }
 
 @media ( min-width: 1900px) {
-    main{
+    main {
         margin: 0 auto;
         width: 60%;
     }

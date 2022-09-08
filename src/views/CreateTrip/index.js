@@ -38,19 +38,19 @@ const CreateTrip = ({history}) => {
 
     return (
         <div className="form-wrapper">
+            <h2>Write trip note</h2>
             <form>
                 <div className="form-group">
-                    <h3>Destination</h3>
+                    <label>Destination</label>
                     <input ref={inputRef} required="required"/>
                 </div>
                 <div className=' form-group'>
-                    <h3>Write here your trip note...</h3>
+                    <label>Write here your trip note...</label>
                     <textarea ref={textareaRef}/>
                 </div>
                 <div className="form-group">
-                    <h3>Upload photo...</h3>
                     <button type="button" id="upload_widget" onClick={() => myWidget.open()}
-                            className="cloudinary-button">Upload files
+                            className="cloudinary-button">Upload photo
                     </button>
                 </div>
                 <div className="form-group">

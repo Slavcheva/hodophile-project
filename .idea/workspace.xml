@@ -2,48 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27208268-c34d-4e91-a710-f23945e14979" name="Default Changelist" comment="Change styles, add responsive styles">
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SubNav/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SubNav/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/trips.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/config/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/config/database.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/config/express.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/config/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/controllers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/controllers/trip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/controllers/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/models/TokenBlacklist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/models/Trip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/models/User.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/models/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/routes/trip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/routes/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/utils/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/utils/jwt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DestinationCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DestinationCard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DestinationCard/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DestinationCard/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TripCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TripCard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TripCard/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TripCard/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SubNav/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubNav/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/CreateTrip/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateTrip/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/CreateTrip/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateTrip/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Destinations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Destinations/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Destinations/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Destinations/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Profile/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Profile/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Profile/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Register/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Trips/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Trips/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +80,7 @@
       <recent name="$PROJECT_DIR$/src/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rest" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/resourses" />
@@ -164,7 +140,7 @@
       <workItem from="1661092345391" duration="39000" />
       <workItem from="1661321798398" duration="149000" />
       <workItem from="1662378950526" duration="30000" />
-      <workItem from="1662379290371" duration="38200000" />
+      <workItem from="1662379290371" duration="48832000" />
     </task>
     <task id="LOCAL-00001" summary="Forms update">
       <created>1618131705112</created>
@@ -264,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618664851004</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Change styles, add responsive styles">
+      <created>1662543496410</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662543496410</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
