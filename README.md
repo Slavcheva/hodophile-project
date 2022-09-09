@@ -4,6 +4,7 @@ hodophile-project is a web site built as project for the ReactJS course at SoftU
 
 Hodophile means "One who loves to travel". 
 This site is a place for travellers who want to share their own unique story and their travel experience. This site is also for everyone who likes to read about interesting places and becomes inspired by travel stories and photos.
+Registered users can post trip notes.
 
 # REST API and DB
 The REST API is in folder: rest. 
