@@ -1,6 +1,6 @@
 main {
     display: flex;
-    margin: 0 0.5em;
+    padding: 0 0.5em 2em 0.5em;
     flex-direction: column;
     justify-content: center;
 }
@@ -20,13 +20,11 @@ main {
 
 .form-wrapper {
     padding: 1em 0 3em 0;
-    /*width: 60%;*/
     margin: 0 auto;
     text-align: center;
 }
 
 .form-wrapper form {
-    /*    !*width: 40%;*!*/
     margin: 0 auto;
 
 

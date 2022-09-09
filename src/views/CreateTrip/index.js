@@ -1,8 +1,6 @@
 /*eslint-disable no-undef*/
 import React from 'react'
-
 import postService from '../../services/post-service'
-import './style.css'
 
 const CreateTrip = ({history}) => {
 

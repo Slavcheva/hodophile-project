@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27208268-c34d-4e91-a710-f23945e14979" name="Default Changelist" comment="Change styles, add responsive styles">
+    <list default="true" id="27208268-c34d-4e91-a710-f23945e14979" name="Default Changelist" comment="Change forms styles">
+      <change afterPath="$PROJECT_DIR$/rest/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/config/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/config/express.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/config/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/controllers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/controllers/trip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/controllers/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/models/TokenBlacklist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/models/Trip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/models/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/routes/trip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/routes/user.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/rest/trips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/utils/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/utils/jwt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DestinationCard/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DestinationCard/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SubNav/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubNav/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/CreateTrip/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateTrip/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/CreateTrip/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateTrip/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Destinations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Destinations/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/CreateTrip/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Destinations/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Destinations/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Login/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Profile/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/NotFound/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NotFound/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/NotFound/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NotFound/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Register/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Trips/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Trips/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Register/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/TripPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TripPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/TripPage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TripPage/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +75,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rest" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -73,18 +96,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rest" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/Logout" />
-      <recent name="$PROJECT_DIR$/src/components/Navigation" />
-      <recent name="$PROJECT_DIR$/src/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rest/config" />
       <recent name="$PROJECT_DIR$/rest" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/resourses" />
-      <recent name="$PROJECT_DIR$/src/views/CreateTrip" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -140,7 +163,8 @@
       <workItem from="1661092345391" duration="39000" />
       <workItem from="1661321798398" duration="149000" />
       <workItem from="1662378950526" duration="30000" />
-      <workItem from="1662379290371" duration="48832000" />
+      <workItem from="1662379290371" duration="55326000" />
+      <workItem from="1662706828790" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="Forms update">
       <created>1618131705112</created>
@@ -247,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662543496410</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Change forms styles">
+      <created>1662644398890</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662644398890</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +308,8 @@
     <MESSAGE value="Add Context" />
     <MESSAGE value="Last Commit :)" />
     <MESSAGE value="Change styles, add responsive styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change styles, add responsive styles" />
+    <MESSAGE value="Change forms styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change forms styles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

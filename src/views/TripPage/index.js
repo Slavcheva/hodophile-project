@@ -1,5 +1,4 @@
 import React from 'react'
-
 import postService from "../../services/post-service";
 import TripCard from "../../components/TripCard";
 

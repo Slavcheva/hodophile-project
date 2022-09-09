@@ -1,7 +1,5 @@
 import React from 'react'
 import * as yup from 'yup';
-
-import './style.css'
 import withForm from "../../components/withForm";
 import userService from '../../services/user-service';
 

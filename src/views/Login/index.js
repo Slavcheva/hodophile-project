@@ -1,6 +1,5 @@
 import React from 'react'
 import withForm from "../../components/withForm";
-import './style.css'
 
 class Login extends React.Component {
     state = {error: null}
